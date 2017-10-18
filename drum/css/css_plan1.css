@@ -1,0 +1,60 @@
+html {
+    font-size: 14px;
+    font-weight: bolder;
+    background-image: url("../src/background.jpg");
+    background-color: black;
+}
+
+/*   
+    position based layout
+    绝对定位的块级盒，margin和max-width控制水平居中，left/top/margin-left/margin-top控制垂直居中 
+*/
+.keys {
+    position: absolute;
+    margin: auto;
+    max-width: 78em;
+    height: 7em;
+    left: 50%;
+    top: 50%;
+    margin-left: -39em;
+    margin-top: -3.5em;
+}        
+/* 块级子盒，通过em来相对布局 float based layout*/
+.key {
+    float: left;
+    box-sizing: border-box;
+    width: 6em;
+    height: 6em;
+    /* border: solid; */
+    margin: 1em;
+    padding: 0.3em;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 0.7em;
+    transition: all 0.07s;
+}
+.key:first-child {
+    margin-left: 0;
+}
+.key:last-child {
+    margin-right: 0;
+}
+/* 把该行级盒写成块级盒，从而单行显示 */
+kbd {
+    font-size: 3em;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 0.1em;
+    height: 1em;
+    color: orangered;  
+}
+.sound {
+    display: block;
+    margin-top: 0;
+    color: rgb(248, 152, 8);
+    height: 1em; 
+}
+.playing {
+    transform: scale(1.1);
+    box-shadow: 0 0 0.7em rgb(255, 60, 0); 
+}
