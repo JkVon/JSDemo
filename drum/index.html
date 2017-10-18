@@ -61,30 +61,7 @@
     <audio data-key="75" src="./src/Drum_Sounds/mid_conga.wav"></audio>
     <audio data-key="76" src="./src/Drum_Sounds/o_hi_hat.wav"></audio>
     <audio data-key="186" src="./src/Drum_Sounds/snare_drum.wav"></audio>
-    <script>
-        window.addEventListener("keydown", function(e){
-            var audio = document.querySelector("audio[data-key='" + e.keyCode + "']"),
-                key = document.querySelector(".key[data-key='" + e.keyCode + "']"),
-                keys = null,
-                len = null,
-                i = null;
 
-            if (!audio) return;
-            key.classList.add("playing");
-            audio.currentTime = 0;
-            audio.play();
-
-            function removeTransition(e) {
-                key.classList.remove("playing");
-            }
-
-            keys = document.querySelectorAll(".key");
-            len = keys.length;
-
-            for (i=0; i<len; i++) {
-                keys[i].addEventListener("transitionend", removeTransition);
-            }
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
