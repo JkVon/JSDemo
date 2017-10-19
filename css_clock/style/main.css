@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    background: rgb(237, 237, 255);
     margin: 0; /* CSS Reset */
     height: 100vh;
 }
@@ -21,7 +20,10 @@ body {
     border-style: double;
     border-width: 1rem;
     border-radius: 50%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.7);
+    background: rgb(192, 192, 192) url(https://picsum.photos/200/100/?blur);
+    background-size: cover;
+    background-position: 100% 100%;
 }
 
 .clockCenter {
@@ -35,6 +37,7 @@ body {
     height: 0;
     left: 50%;
     top: 50%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 .hand {
