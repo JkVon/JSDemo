@@ -1,0 +1,120 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    background: rgb(237, 237, 255);
+    margin: 0; /* CSS Reset */
+    height: 100vh;
+}
+
+.clockFace {
+    position: fixed;
+    box-sizing: content-box;
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    margin-left: -15rem;
+    margin-top: -15rem;
+    left: 50%;
+    top: 50%;
+    /* background-color: white; */
+    border-style: double;
+    border-width: 1rem;
+    border-radius: 50%;
+}
+
+.clockCenter {
+    position: fixed;
+    border: double 1rem;
+    border-radius: 50%;
+    margin: auto;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+}
+
+.hand {
+    position: fixed;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+}
+
+.hand--second {
+    height: 16rem;
+    width: 0.4rem;
+    margin: auto;
+    margin-top: -12rem;
+    margin-left: 0.8rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: rgb(255, 6, 6);
+    transform-origin: 0.2rem 13rem;
+    /* transform: rotate(90deg); */
+}
+
+.hand--minute {
+    height: 14.5rem;
+    width: 0.6rem;
+    margin: auto;
+    margin-top: -11rem;
+    margin-left: 0.7rem;
+    border-style: solid;
+    background: rgb(112, 74, 2);
+    border-width: 0;
+    box-sizing: border-box;
+    /* transform-origin: 0.2rem 13rem; */
+}
+
+.hand--hour {
+    height: 12rem;
+    width: 0.8rem;
+    margin: auto;
+    margin-top: -9rem;
+    margin-left: 0.6rem;
+    border-style: solid;
+    border-width: 0.15rem;
+    box-sizing: border-box;
+    border-width: 0;
+    background-color: rgb(38, 68, 1);
+}
+
+.clockNumber {
+    position: fixed;
+    box-sizing: border-box;
+    border: solid 0.2rem;
+    margin: auto;
+    margin-top: -14rem;
+    margin-left: 0.8rem;
+    width: 0;
+    height: 1rem;
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    border-color: black;
+    
+    box-shadow: 0 29rem;
+    transform-origin: 0.2rem 15rem;
+}
+
+.transform--30deg {
+    transform: rotate(30deg);
+}
+
+.transform--60deg {
+    transform: rotate(60deg);
+}
+
+.transform--90deg {
+    transform: rotate(90deg);
+}
+
+.transform--120deg {
+    transform: rotate(120deg);
+}
+
+.transform--150deg {
+    transform: rotate(150deg);
+}
