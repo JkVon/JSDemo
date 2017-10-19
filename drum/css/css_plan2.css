@@ -5,6 +5,11 @@ html {
     background-size: cover; /* background zoom proportionally with cut */
     background-color: black;
 }
+
+body {
+    margin: 0; /* CSS Reset */
+}
+
 /* Flexable box leyout */
 .keys {
     display: flex;
